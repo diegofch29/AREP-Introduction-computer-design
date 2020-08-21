@@ -12,7 +12,7 @@ package Deviation;
 public class DeviationApp {
     LinkedList List ;
     public  DeviationApp( String args){
-        String[] valores = args.replace(", "," ").replace("  "," ").split(" ");
+        String[] valores = args.replace(","," ").replace("  "," ").split(" ");
         List = new LinkedList();
         for (String i:valores){
             List.addNode(Double.parseDouble(i));
